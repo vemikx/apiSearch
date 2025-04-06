@@ -1,0 +1,58 @@
+.themes__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.themes__wrapper_dark {
+    svg {
+        path {
+            stroke: #fff;
+        }
+    }
+}
+
+.theme__wrapper {
+    display: flex;
+    padding: 4px 10px;
+    cursor: pointer;
+    background-color: #e2dfdf;
+    transition: 0.3s all;
+}
+
+.theme__wrapper:hover {
+    background-color: #ffffff;
+    border-color: #fff200;
+}
+
+.moon.theme__wrapper.active {
+    background-color: #000000;
+    svg {
+        path {
+            stroke: #000000;
+        }
+    }
+}
+
+.theme__wrapper.active {
+    background-color: #000000;
+    svg {
+        path {
+            stroke: #fff200;
+        }
+    }
+}
+
+.left {
+    border-radius: 10px 0 0 10px;
+}
+
+.right {
+    border-radius: 0 10px 10px 0;
+}
+
+.active {
+    background-color: #000000;
+}

@@ -1,0 +1,32 @@
+.data__wrapper {
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 20px;
+    overflow: visible;
+}
+
+.container {
+    height: 100vh;
+    /* padding-bottom: 200px; */
+    padding: 0 2rem;
+}
+
+.container.light {
+    background-color: #fff;
+}
+
+
+.main__container.light{
+    background-color: #fff;
+}
+
+.dark {
+    color: #fff;
+}
+
+.light {
+    color: #000;
+}

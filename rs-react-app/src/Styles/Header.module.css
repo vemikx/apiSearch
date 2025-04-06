@@ -1,0 +1,36 @@
+.search__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 26px;
+    align-items: center;
+    gap: 24px;
+}
+
+.search__container {
+    display: flex;
+    gap: 24px;
+}
+
+.search__hint {
+    font-style: italic;
+}
+
+.title__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+    gap: 56px;
+}
+
+.title {
+    font-size: 4rem;
+}
+
+.title.light {
+    color: #000000;
+}
+
+:global(.dark) {
+    color: #ffffff;
+}
