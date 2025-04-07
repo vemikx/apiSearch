@@ -1,5 +1,4 @@
 import { SetStateAction, useState } from 'react';
-import { ThemeProvider } from './Providers/ThemeProvider';
 import './App.css';
 import Header from './Components/Header';
 import Main from './Components/Main';

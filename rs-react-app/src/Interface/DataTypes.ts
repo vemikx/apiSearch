@@ -125,7 +125,7 @@ export type SingleItem = Film | People | Species | Vehicle | Starship | Planet;
 
 export interface CardItem {
   data: SingleItem;
-  firstIndex?: number;
+  firstIndex: number;
   itemIndex: number;
 }
 export interface CardProps {

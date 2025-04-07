@@ -1,8 +1,13 @@
 import styles from '../Styles/Card.module.css';
-import { CardItem } from '../Interface/DataTypes';
+import { SingleItem } from '../Interface/DataTypes';
 import { Card } from './Card.tsx';
 
-const Cards = ({ firstIndex, data }: CardItem) => {
+interface CardItems {
+  firstIndex: number;
+  data: SingleItem[];
+}
+
+const Cards = ({ firstIndex, data }: CardItems) => {
   if (!Array.isArray(data)) {
     return <p>Data is not an array</p>;
   }

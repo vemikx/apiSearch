@@ -1,4 +1,4 @@
-import React, { ReactNode, useState } from 'react';
+import { ReactNode, useState } from 'react';
 import { ThemeContext } from './ThemeContext';
 
 export function ThemeProvider({ children }: { children: ReactNode }) {

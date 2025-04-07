@@ -5,7 +5,6 @@ import styles from '../Styles/Main.module.css';
 import { SwapiResponseUnion, SingleItem } from '../Interface/DataTypes';
 import { useState } from 'react';
 import { useTheme } from '../Providers/ThemeContext';
-import { useAppDispatch } from '../app/hook';
 import { useSelector } from 'react-redux';
 import { RootState } from '../app/store';
 
@@ -15,7 +14,7 @@ interface MainProps {
 
 const Main = ({ data }: MainProps) => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [cardPerPage, setCardPerPage] = useState(4);
+  const [cardPerPage] = useState(4);
   const { theme } = useTheme();
   const hasCards = useSelector(
     (state: RootState) => state.selectedCards.hasCards

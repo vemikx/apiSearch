@@ -1,5 +1,4 @@
 import styles from '../Styles/Card.module.css';
-// import { SingleItem } from '../Interface/DataTypes';
 import { CardProps } from '../Interface/DataTypes';
 import { useTheme } from '../Providers/ThemeContext';
 import { useAppDispatch, useAppSelector } from '../app/hook';
@@ -25,7 +24,7 @@ export const Card = ({ firstIndex, data, itemIndex }: CardProps) => {
           name={String(firstIndex)}
           id={String(firstIndex)}
           checked={isChecked}
-          onChange={() => dispatch(toggleCard({ itemIndex, data }))}
+          onChange={() => dispatch(toggleCard({ itemIndex, data, firstIndex }))}
         />
       </div>
       <h3
