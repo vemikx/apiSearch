@@ -52,7 +52,7 @@ const Header = ({ onDataUpdate }: HeaderProps) => {
         </div>
         <div className={styles.search__hint}>
           <span>
-            Поиск доступен по следующим ключевым словам: people, planets, films,
+            Поиск доступен по следующим ключевым словам: people, planets,
             species, vehicles, starships
           </span>
         </div>
