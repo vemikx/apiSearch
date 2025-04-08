@@ -1,0 +1,36 @@
+.control {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    /* left: calc(100% / 2); */
+}
+
+.control__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    background-color: #000000;
+    padding: 2rem 0;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+
+.control__btn {
+    cursor: pointer;
+}
+
+.control__amount {
+    color : #fff;
+}
+
+.control__btn:hover {
+    background-color: #bc90d2;
+    color: #fff;
+}
+
+.btn__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}

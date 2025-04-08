@@ -1,0 +1,13 @@
+.search__btn {
+    padding: 8px 20px;
+    font-size: 16px;
+    background-color: #cd8bf1;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+.search__btn:hover {
+    background-color: #9d4ac7;
+    color: #000000;
+}

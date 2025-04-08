@@ -1,0 +1,36 @@
+.pagination__wrapper {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}
+
+.pagination__btn {
+    background-color: #fff;
+}
+
+.pagination__btn:hover {
+    color: #fff;
+    background-color: #8e98c289;
+}
+
+.pagination__btn.active {
+    background-color: #cd8bf1;
+    color: #fff;
+}
+
+.pagination__btn.active.light  {
+    background-color: #cd8bf1;
+}
+
+.pagination__btn.light {
+    background-color: #8690b64a;
+}
+
+
+
+
+
+/* button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+} */

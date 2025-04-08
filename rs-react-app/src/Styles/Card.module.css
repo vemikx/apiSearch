@@ -1,0 +1,52 @@
+.card {
+    display: flex;
+    flex: 0 0 calc(20% - 16px);
+    max-width: calc(20% - 16px);
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 20px 16px;
+    background-color: #8690b64a;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s;  
+}
+
+.card:hover {
+    background-color: #8e98c289;
+}
+
+
+.card__title {
+    margin-bottom: 1em;
+    margin-top: 0;
+}
+
+.card__title.light {
+    color: #000000;
+}
+
+.dark {
+    color: #fff
+}
+
+.card__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+}
+
+.data__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkbox__wrapper {
+    display: flex;
+    justify-content: right;
+    cursor: pointer;
+}
+
+.card__checkbox {
+    cursor: pointer;
+}
+
