@@ -33,6 +33,7 @@ src/
 ├── Interface/          # Общие типы TypeScript
 ├── Providers/          # Контекст
 └── App.tsx             # Точка входа
+```
 
 ## 🧪 Запуск проекта
 
