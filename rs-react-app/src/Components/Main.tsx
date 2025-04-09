@@ -39,13 +39,15 @@ const Main = ({ data }: MainProps) => {
     >
       <div className={styles.data__wrapper}>
         <Cards firstIndex={firstCardIndex} data={currentCardsData} />
-        <Pagination
-          totalCards={resultsData.length}
-          cardsPerPage={cardPerPage}
-          setCurrentPage={setCurrentPage}
-          сurrentPage={currentPage}
-        />
-        {hasCards && <SavePanel amount={selectedCards.length} />}
+        <div className={styles.cntrl__wrapper}>
+          {hasCards && <SavePanel amount={selectedCards.length} />}
+          <Pagination
+            totalCards={resultsData.length}
+            cardsPerPage={cardPerPage}
+            setCurrentPage={setCurrentPage}
+            сurrentPage={currentPage}
+          />
+        </div>
       </div>
     </div>
   );
