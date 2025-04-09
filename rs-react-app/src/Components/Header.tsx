@@ -5,6 +5,8 @@ import SearchButton from './SearchButton';
 import styles from '../Styles/Header.module.css';
 import { SwapiResponseUnion } from '../Interface/DataTypes';
 import { useTheme } from '../Providers/ThemeContext';
+import { v4 as uuidv4 } from 'uuid';
+import { SingleItem } from '../Interface/DataTypes';
 interface HeaderProps {
   onDataUpdate: (data: SwapiResponseUnion) => void;
 }
@@ -28,7 +30,11 @@ const Header = ({ onDataUpdate }: HeaderProps) => {
         throw new Error(`Ошибка: ${response.status} ${response.statusText}`);
       }
       const result = await response.json();
-      onDataUpdate(result);
+      const updatedResults = result.results.map((item: SingleItem) => ({
+        ...item,
+        uuid: uuidv4(),
+      }));
+      onDataUpdate({ ...result, results: updatedResults });
     } catch (error: any) {
       setData((prevData) => ({
         ...prevData,

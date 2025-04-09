@@ -33,5 +33,7 @@
 
 .cntrl__wrapper {
     display: flex;
-    justify-content: space-around;
+    height: 100px;
+    /* justify-content: space-around; */
+    align-items: center;
 }

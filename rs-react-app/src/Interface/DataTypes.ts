@@ -19,6 +19,7 @@ export interface People {
   created: string;
   edited: string;
   url: string;
+  uuid: string;
 }
 
 export interface Planet {
@@ -36,6 +37,7 @@ export interface Planet {
   created: string;
   edited: string;
   url: string;
+  uuid: string;
 }
 
 export interface Film {
@@ -53,6 +55,7 @@ export interface Film {
   created: string;
   edited: string;
   url: string;
+  uuid: string;
 }
 
 export interface Species {
@@ -71,6 +74,7 @@ export interface Species {
   created: string;
   edited: string;
   url: string;
+  uuid: string;
 }
 
 export interface Vehicle {
@@ -90,6 +94,7 @@ export interface Vehicle {
   created: string;
   edited: string;
   url: string;
+  uuid: string;
 }
 
 export interface Starship {
@@ -111,6 +116,7 @@ export interface Starship {
   created: string;
   edited: string;
   url: string;
+  uuid: string;
 }
 
 export type SwapiResponseUnion =
@@ -126,12 +132,12 @@ export type SingleItem = Film | People | Species | Vehicle | Starship | Planet;
 export interface CardItem {
   data: SingleItem;
   firstIndex: number;
-  itemIndex: number;
+  uuid: string;
 }
 export interface CardProps {
   data: SingleItem;
   firstIndex: number;
-  itemIndex: number;
+  itemIndex: string;
 }
 
 export type FilmResponse = SwapiResponse<Film>;
