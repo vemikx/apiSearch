@@ -1,10 +1,10 @@
 import styles from '../Styles/Card.module.css';
-import { CardProps } from '../Interface/DataTypes';
+import { CardItem } from '../Interface/DataTypes';
 import { useTheme } from '../Providers/ThemeContext';
 import { useAppDispatch, useAppSelector } from '../app/hook';
 import { toggleCard } from '../features/counter/counter-slice';
 
-export const Card = ({ firstIndex, data, itemIndex }: CardProps) => {
+export const Card = ({ firstIndex, data, uuid }: CardItem) => {
   const { theme } = useTheme();
   const dispatch = useAppDispatch();
 
@@ -12,7 +12,10 @@ export const Card = ({ firstIndex, data, itemIndex }: CardProps) => {
   const selectedCards = useAppSelector(
     (state) => state.selectedCards.selectedCards
   );
-  const isChecked = selectedCards.some((card) => card.itemIndex === itemIndex);
+  if (selectedCards.length > 0) {
+    console.log(selectedCards[0].uuid, uuid);
+  }
+  const isChecked = selectedCards.some((card) => card.uuid === uuid);
   return (
     <div className={styles.card}>
       <div
@@ -24,7 +27,7 @@ export const Card = ({ firstIndex, data, itemIndex }: CardProps) => {
           name={String(firstIndex)}
           id={String(firstIndex)}
           checked={isChecked}
-          onChange={() => dispatch(toggleCard({ itemIndex, data, firstIndex }))}
+          onChange={() => dispatch(toggleCard({ uuid, data, firstIndex }))}
         />
       </div>
       <h3

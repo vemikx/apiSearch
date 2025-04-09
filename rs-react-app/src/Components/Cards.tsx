@@ -18,7 +18,7 @@ const Cards = ({ firstIndex, data }: CardItems) => {
           key={index + firstIndex}
           firstIndex={firstIndex + index}
           data={item}
-          itemIndex={index + firstIndex}
+          uuid={item.uuid}
         />
       ))}
     </div>

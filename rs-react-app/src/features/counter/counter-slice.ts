@@ -17,7 +17,7 @@ const cardSlice = createSlice({
   reducers: {
     toggleCard: (state, action: PayloadAction<CardItem>) => {
       const index = state.selectedCards.findIndex(
-        (card) => card.itemIndex === action.payload.itemIndex
+        (card) => card.uuid === action.payload.uuid
       );
       if (index === -1) {
         state.selectedCards.push(action.payload);
