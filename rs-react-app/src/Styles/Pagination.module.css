@@ -1,10 +1,12 @@
 .pagination__wrapper {
     display: flex;
-    justify-content: right;
+    margin-left: auto;
     gap: 20px;
 }
 
 .pagination__btn {
+    width: 48px;
+    height: 42px;
     background-color: #fff;
 }
 
